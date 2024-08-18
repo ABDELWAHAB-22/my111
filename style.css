@@ -1,0 +1,1340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:Tahoma,poppins , Verdana, Geneva, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+::-webkit-scrollbar{
+    background-color: #fff;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #750505;
+    
+}
+.header{
+    background-color: #ffffff;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    padding: 10px 200px;
+}
+
+.header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.header nav .logo{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+}
+.header nav .logo i{
+    margin: auto;
+    color: #000;
+    font-size: 22px;
+}
+
+.header nav .logo h2{
+    color: #a2b3c8;
+    text-transform: uppercase;
+}
+
+.link{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.link .home{
+    display: flex;
+}
+
+.link a{
+    text-decoration: none;
+    color: #a2b3c8;
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 35px;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+.link a:hover{
+    border-bottom:2px solid #000;
+    color: #000;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.link a span{
+    margin-right: 10px;
+}
+
+
+section.home-parent{
+    background:url(./image/66.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 0px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home1{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.home1 h1{
+    font-weight:600 ;
+    font-size: 70px;
+    color:#a2b3c8;
+    text-shadow:10px 5px 20px #f50808;
+    cursor: pointer;
+}
+
+.home1 h4{
+    font-weight:500 ;
+    font-size: 40px;
+}
+
+.home1 h6{
+    font-weight:400 ;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.home1 a{
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    text-transform: capitalize;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight:600;
+    padding: 15px 20px;
+    border: none;
+    margin-top: 50px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.home1 a:hover{
+    color:#a2b3c8;
+    background-color: #000;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.home-parent div.img img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/*brand*/
+
+.brand{
+    padding: 150px 0px 100px 0px;
+    background-color: #ddd;
+    padding: 0px 200px;
+}
+.brand>h2{
+    text-align: center;
+    font-weight:600 ;
+    font-size: 45px;
+    color:#000;
+    text-shadow:10px 5px 20px #f50808;
+    border-bottom: 2px solid #000;
+    padding: 70px 0 0 0;
+    margin: 0 auto 10px auto;
+    cursor: pointer ;
+    transition:all 3s ease;
+    -webkit-transition:all 3s ease;
+    -moz-transition:all 3s ease;
+    -ms-transition:all 3s ease;
+    -o-transition:all 3s ease;
+}
+.brand>h2:hover{
+    color: #fff;
+    text-shadow:10px 5px 20px #ff0000;
+    border-bottom: 2px solid #fff;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+
+.types{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.type{
+    width: calc(100%/3);
+    padding: 60px 40px;
+}
+
+.type a{
+    text-decoration: none;
+    display: block;
+    width: 230px;
+    height: 230px;
+    background-color: #000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    margin:auto;
+    cursor: pointer;
+    transition:2s ;
+    -webkit-transition:2s ;
+    -moz-transition:2s ;
+    -ms-transition:2s ;
+    -o-transition:2s ;
+}
+
+.type a:hover{
+    background-color: #a2b3c8;
+    border: 5px solid #000;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.type h2{
+    color: #a2b3c8;   
+    text-align: center;
+    margin:auto;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    padding-top: 90px;
+}
+.type h2:hover{
+    color: #000;
+}
+
+hr{
+    height: 5px;
+    background-color: #fff;
+}
+.products{
+    padding: 0px 200px;
+    background-color: #f4f4f4;
+}
+.caption{
+    margin-bottom: 30px;
+    padding-top: 50px;
+}
+.products .caption>h2{
+    width: 250px;
+    margin: 0 auto;
+    font-weight:600 ;
+    font-size: 50px;
+    text-shadow:10px 5px 20px rgb(245, 8, 8);
+    cursor: pointer ;
+    text-align: center;
+    color:#000;
+    border-bottom: solid 2px #000;
+    transition:  all 2s ease;
+    -webkit-transition:  all 2s ease;
+    -moz-transition:  all 2s ease;
+    -ms-transition:  all 2s ease;
+    -o-transition:  all 2s ease;
+}
+.products .caption>h2:hover{
+    color: #a2b3c8;
+    border-bottom: solid 2px #a2b3c8;
+    text-shadow:10px 5px 20px rgb(0, 0, 0 red);
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+/** hp **/
+
+.products h2.hp-logo{
+    text-transform: uppercase;
+    font-weight:600 ;
+    font-size: 40px;
+    cursor: pointer ;
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto 20px auto;
+    width: 100px;
+    height: 100px;
+    color:#a2b3c8;
+    background-color: #000;
+    border: 5px solid #a2b3c8;
+    border-radius: 50% ;
+    -webkit-border-radius: 50% ;
+    -moz-border-radius: 50% ;
+    -ms-border-radius: 50% ;
+    -o-border-radius: 50% ;
+}
+
+.cards{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+}
+.card{
+    display: flex;
+    justify-content: center;
+}
+.card19,.card20,.card21{
+    margin:0px 5px; 
+}
+.cards .hp{
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    width: calc(95%/6);
+    margin-bottom: 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 4px 3px 20px 1px #000000;
+    transition: all 3s ease;
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    -o-transition: all 3s ease;
+}
+.cards .hp:hover{
+    transform: scale(1.1) rotate(5deg);
+    -webkit-transform: scale(0.9) rotate(3deg);
+    -moz-transform: scale(1.1) rotate(5deg);
+    -ms-transform: scale(1.1) rotate(5deg);
+    -o-transform: scale(1.1) rotate(5deg);
+    cursor: pointer;
+}
+.cards .hp img{
+    width: 148px;
+    height: 150px;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+}
+
+.cards .hp>div{
+    padding: 5px;
+    margin: 5px 0px 10px 0px;
+    height: 150px;
+}
+.cards .hp>div>h3 , p{
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.cards .hp>button{
+   background-color: #000;
+   color: #fff;
+   text-transform: capitalize;
+   text-decoration: none;
+   cursor: pointer;
+   font-size: 18px;
+   font-weight:600;
+   margin:10px 0px;
+   padding: 10px 15px;
+   border: 2px solid ;
+   border-radius: 30px;
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   -ms-border-radius: 30px;
+   -o-border-radius: 30px;
+   transition:all 2s ease ;
+   -webkit-transition:all 2s ease ;
+   -moz-transition:all 2s ease ;
+   -ms-transition:all 2s ease ;
+   -o-transition:all 2s ease ;
+}
+.cards .hp>button:hover{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+/** dell **/
+
+.products h2.dell-logo{
+    text-transform: uppercase;
+    font-weight:600 ;
+    font-size: 30px;
+    cursor: pointer ;
+    text-align: center;
+    padding: 25px 0px;
+    margin: 50px auto 15px auto;
+    width: 110px;
+    height: 110px;
+    color:#a2b3c8;
+    background-color: #000;
+    border: 5px solid #a2b3c8;
+    border-radius: 50% ;
+    -webkit-border-radius: 50% ;
+    -moz-border-radius: 50% ;
+    -ms-border-radius: 50% ;
+    -o-border-radius: 50% ;
+}
+.cards .dell{
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    width: calc(95%/6);
+    margin-bottom: 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 4px 3px 20px 1px #000000;
+    transition: all 3s ease;
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    -o-transition: all 3s ease;
+}
+.cards .dell:hover{
+    transform: scale(1.1) rotate(5deg);
+    -webkit-transform: scale(0.9) rotate(3deg);
+    -moz-transform: scale(1.1) rotate(5deg);
+    -ms-transform: scale(1.1) rotate(5deg);
+    -o-transform: scale(1.1) rotate(5deg);
+    cursor: pointer;
+}
+.cards .dell img{
+    width: 148px;
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+}
+
+.cards .dell>div{
+    padding: 5px;
+    margin: 5px 0px 10px 0px;
+    height: 150px;
+}
+.cards .dell>div>h3,p{
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.cards .dell>button{
+   background-color: #000;
+   color: #fff;
+   text-transform: capitalize;
+   text-decoration: none;
+   cursor: pointer;
+   font-size: 18px;
+   font-weight:600;
+   padding: 10px 15px;
+   margin:10px 0px;
+   border: 2px solid ;
+   border-radius: 30px;
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   -ms-border-radius: 30px;
+   -o-border-radius: 30px;
+   transition:all 2s ease ;
+   -webkit-transition:all 2s ease ;
+   -moz-transition:all 2s ease ;
+   -ms-transition:all 2s ease ;
+   -o-transition:all 2s ease ;
+}
+.cards .dell>button:hover{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+/**apple**/
+
+.products h2.apple-logo{
+    text-transform: uppercase;
+    font-weight:600 ;
+    font-size: 27px;
+    cursor: pointer ;
+    text-align: center;
+    padding: 30px 0px;
+    margin: 50px auto 15px auto;
+    width: 110px;
+    height: 110px;
+    color:#a2b3c8;
+    background-color: #000;
+    border: 5px solid #a2b3c8;
+    border-radius: 50% ;
+    -webkit-border-radius: 50% ;
+    -moz-border-radius: 50% ;
+    -ms-border-radius: 50% ;
+    -o-border-radius: 50% ;
+}
+.cards .apple{
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    width: calc(95%/6);
+    margin-bottom: 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 4px 3px 20px 1px #000000;
+    transition: all 3s ease;
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    -o-transition: all 3s ease;
+}
+.cards .apple:hover{
+    transform: scale(1.1) rotate(5deg);
+    -webkit-transform: scale(0.9) rotate(3deg);
+    -moz-transform: scale(1.1) rotate(5deg);
+    -ms-transform: scale(1.1) rotate(5deg);
+    -o-transform: scale(1.1) rotate(5deg);
+    cursor: pointer;
+}
+.cards .apple img{
+    width: 148px;
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+}
+
+.cards .apple>div{
+    padding: 5px;
+    margin: 5px 0px 10px 0px;
+    height: 150px;
+}
+.cards .dell>div>h3,p{
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.cards .apple>button{
+   background-color: #000;
+   color: #fff;
+   text-transform: capitalize;
+   text-decoration: none;
+   cursor: pointer;
+   font-size: 18px;
+   font-weight:600;
+   padding: 10px 15px;
+   margin:10px 0px;
+   border: 2px solid ;
+   border-radius: 30px;
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   -ms-border-radius: 30px;
+   -o-border-radius: 30px;
+   transition:all 2s ease ;
+   -webkit-transition:all 2s ease ;
+   -moz-transition:all 2s ease ;
+   -ms-transition:all 2s ease ;
+   -o-transition:all 2s ease ;
+}
+.cards .apple>button:hover{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+/**login**/
+
+.login-container{
+    background-image: url(./image/wallhaven-l8mlyy.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:darken;
+    padding: 100px 200px;
+}
+.login-container .lgn{
+    display: flex;
+    background-color: #000000b8;
+    width: 100%;
+    height: 650px;
+    padding: 30px 50px;
+    direction: rtl;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0px 20px;
+}
+
+form .caption-1{
+    margin-bottom: 30px;  
+}
+
+form h2{
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff;
+}
+
+form>div>div.border{
+    border-bottom: 4px solid #f50808;
+    width: 15%;
+}
+input[type="text"],[type="email"],[type="password"]{
+    margin-bottom: 30px;
+    height: 40px;
+    border: 4px solid #f4f4f4;
+    padding: 15px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 18px;
+    background-color: #a2b3c8;
+    color: #000;
+    outline: none;
+}
+input::placeholder{
+    color: #000;
+}
+textarea{
+    resize: vertical;
+    overflow: auto;
+    border: 4px solid #f4f4f4;
+    outline: none;
+    padding: 5px 10px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 18px;
+    background-color: #a2b3c8;
+    color: #000;
+}
+input[type="submit"]{
+    background-color: #a2b3c8;
+    color: #000;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight:700;
+    border: 2px solid #000;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    width: 250px;
+    padding: 8px 0px;
+}
+
+input[type="submit"]:hover{
+    color:#a2b3c8;
+    cursor: pointer;
+    background-color: #000;
+    border: 2px solid #a2b3c8;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+.Get-in-Touch{
+    width: 50%;
+    color: #fff;
+    padding: 0px 20px;
+}
+.Get-in-Touch .caption-1{
+    margin-bottom: 30px;  
+}
+.Get-in-Touch h2{
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff;
+}
+.Get-in-Touch>div>div.border{
+    border-bottom: 4px solid #f50808;
+    width: 15%;
+}
+.Get-in-Touch>p{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.8;
+}
+
+.Get-in-Touch .btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.Get-in-Touch .btn i{
+   display: flex;
+   margin-bottom: 15px;
+   color: #f50808;
+   font-size: 18px;
+}
+.Get-in-Touch .btn i span{
+    margin-right: 10px;
+    color: #fff;
+ }
+
+ .btn-1{
+    margin-top: 25px;
+    font-weight:700;
+    font-size: 35px;
+}
+
+.btn-1 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-1 i{
+    margin-left: 15px;
+}
+.btn-1 i.fa-facebook{
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.btn-1 i.fa-facebook:hover{
+    
+    color: #00f;
+    cursor: pointer;
+    background: #f4f4f4;
+}
+
+.btn-1 i.fa-instagram{
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+.btn-1 i.fa-instagram:hover{
+    color: #e24689;
+    cursor: pointer;
+}
+
+.btn-1 i.fa-whatsapp{
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.btn-1 i.fa-whatsapp:hover{
+    
+    color: #008812;
+    cursor: pointer;
+}
+
+.btn-1 i.fa-youtube{
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.btn-1 i.fa-youtube:hover{
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.btn-1 i.fa-twitter{
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.btn-1 i.fa-twitter:hover{
+    color: #58a9fa;
+    cursor: pointer;
+}
+
+.btn-1 i.fa-linkedin{
+    transition: all 1.5s ease;
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+}
+.btn-1 i.fa-linkedin:hover{
+    color: #006eff;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #000;
+    height: 60px;
+    padding: 10px 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer>div{
+    padding-top: 12px;
+}
+footer>div>p{
+    color: #ff0000;
+    font-weight: 500;
+    font-size:22px ;
+}
+footer>div>p>span{
+    color: #a2b3c8;
+    font-size: 20px;
+}
+
+/*responsive*/
+@media (max-width : 1001px),(max-width: 1300px){
+    .link a{
+        font-size: 18px;
+        font-weight: 600;
+    }
+.type{
+        padding: 35px 10px;
+    }
+.type a{
+        width: 140px;
+        height: 140px;
+    }
+.type h2{
+        font-weight: 600;
+        font-size: 28px;
+        padding-top:55px;
+    } 
+
+.cards{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+.cards .hp{
+        width: calc(90%/4);
+    }
+.cards .dell{
+        width: calc(90%/4);
+    }
+.cards .apple{
+        width: calc(90%/4);
+    }
+.cards .hp img{
+        width: 100%;
+    }
+.cards .dell img{
+        width: 100%;
+    }
+.cards .apple img{
+        width: 100%;
+    }
+
+.login-container{
+        padding: 50px 100px;
+    }
+.login-container .lgn{
+        height: 100%;
+    }
+form h2{
+        font-weight: 600;
+        font-size: 25px;
+    }
+form>div>div.border{
+        width: 32%;
+        margin-top: 7px;
+    }
+    input[type="text"],[type="email"],[type="password"]{
+        font-size: 17px;
+    }
+input[type="submit"]{
+    font-size: 22px;
+    font-weight:600;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    width: 220px;
+    margin-top: 10px;
+}
+.Get-in-Touch h2{
+    font-weight: 600;
+    font-size: 25px;
+}
+.Get-in-Touch>div>div.border{
+    width: 22%;
+    margin-top: 7px;
+}
+.Get-in-Touch>p{
+    font-weight: 500;
+    font-size: 22px;
+}
+.btn-1{
+    margin-top: 22px;
+    font-weight:600;
+    font-size: 30px;
+}
+
+@media (max-width : 768px),(max-width: 1000px){
+        .header{
+            padding: 8px 5px;
+        }
+    
+        .header nav .logo i {
+            font-size:16px;
+        }
+    
+        .header nav .logo h2{
+            font-size: 15px;
+        }
+    
+        .link a{
+            font-size: 15px;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+    
+        .link a:hover{
+            font-size: 20px;
+            font-weight: 400;
+            transform: scale(0.9);
+            -webkit-transform: scale(0.9);
+            -moz-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            -o-transform: scale(0.9);
+        }
+    
+    
+        .link a span{
+            margin-right: 5px;
+        }
+    
+        section.home-parent{
+            padding: 0px 100px;
+        }
+    
+        .home1 h1{
+    
+            font-size: 50px;
+        }
+        .home1 h4{
+            font-size: 32px;
+            font-weight:400 ;
+        }
+        .home1 h6{
+            font-weight:300 ;
+            font-size: 18px;
+        }
+        .home1 a{
+            font-size: 20px;
+            padding: 10px 15px;
+            margin-top: 60px;
+        }
+    
+        .home-parent div.img img{
+            width: 275px;
+            height: 275px;
+        }
+    
+        .brand{
+            padding: 0px 100px;
+        }
+        .brand>h2{
+            font-weight:600 ;
+            font-size: 30px;
+            padding: 55px 0 0 0;
+        }
+        .type{
+            padding: 35px 0px;
+            width: calc(97%/2);
+        }
+        .type a{
+            width: 160px;
+            height: 160px;
+           
+        }
+        .type h2{
+            font-weight: 600;
+            font-size: 25px;
+            padding-top:65px;
+        }
+    
+        .products{
+            padding: 0px 100px 20px 100px;
+        }
+        .products .caption>h2{
+            font-weight:600 ;
+            font-size: 30px;
+        }
+        .products h2.hp-logo{
+            font-weight:600 ;
+            font-size: 30px;
+            width: 75px;
+            height: 75px;
+            padding:10px;
+        }
+        
+        .cards{
+            flex-wrap: wrap;
+        }
+    
+        .cards .hp{
+            width: calc(97%/3);
+        }
+    
+        .cards .hp img{
+            width: 100%;
+        }
+    
+        .products h2.dell-logo{
+            font-weight: 600;
+            font-size: 22px;
+            width: 75px;
+            height: 75px;
+            padding-top: 15px;
+        }
+    
+        .cards .dell{
+            width: calc(97%/3);
+        }
+        
+        .cards .dell img{
+            width: 100%;
+        }
+    
+        .products h2.apple-logo{
+            font-weight: 600;
+            font-size: 17px;
+            width: 75px;
+            height: 75px;
+            padding-top: 20px;
+        }
+    
+        .cards .apple{
+            width: calc(97%/3);
+        }
+        
+        .cards .apple img{
+            width: 100%;
+        }
+    
+        .login-container{
+            padding: 50px 100px;
+        }
+        .login-container .lgn{
+            padding: 10px 30px;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100%;
+        }
+       
+        form
+        {
+            width: 100%;    
+        }
+
+        form .caption-1{
+            margin-top: 15px;
+        }
+        form h2{
+            font-size: 28px;
+        }
+    
+        input[type="text"],[type="email"],[type="password"]{
+            margin-bottom: 20px;
+            height: 35px;
+            font-size: 18px;
+        }
+
+        textarea{
+            font-size: 18px;
+        }
+
+        .Get-in-Touch {
+            width: 100%;
+        }
+        
+        .Get-in-Touch .caption-1{
+            margin-top: 35px;  
+        }
+
+        .Get-in-Touch h2{
+            font-size: 28px;
+        }
+        .Get-in-Touch>p{
+            font-size: 22px;
+        }
+        .Get-in-Touch .btn i{
+            font-size: 16px;
+         }
+    
+         .btn-1{
+            font-size: 32px;
+            margin-top: 15px;
+        }
+    
+        footer{
+            padding: 0px 100px;
+        }
+        footer>div>p{
+            font-weight: 500;
+            font-size:20px ;
+        }
+        footer>div>p>span{
+            font-size: 18px;
+        }
+    }
+
+}
+
+
+@media (max-width : 500px){
+    .header{
+        padding: 0px;
+        background-color: #750505;
+        margin: 0px;
+        text-align: center;
+        position: static;
+    }
+
+    .header nav {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 10px 0;
+    }
+    .header nav .logo i{
+        margin: auto;
+        color: #000;
+        font-size: 30px;
+    }
+    .header nav .logo h2{
+       color: #000;
+       font-size: 30px;
+       font-weight: 800;
+    }
+    .header nav .link{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    .header nav .link a{
+        margin: 5px 0px;
+        font-size: 20px;
+        color: #fff;
+        
+    }
+    .link a:hover{
+        border-bottom: 0px;
+    }
+
+    section.home-parent{
+       background-attachment:scroll;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       margin: auto;
+    }
+    .home1{
+        text-align: center;
+    }
+    .home1 h1{
+        font-size: 25px;
+        font-weight:800 ;
+    }
+    .home1 h4{
+        margin-top: 10px;
+        color: coral;
+    }
+    .home1 h6{
+        font-weight:400 ;
+        font-size: 22px;
+        margin-top: 10px;
+        color: coral;
+    }
+    .home1 a{
+        padding: 10px 15px;
+        margin-top: 30px;
+    }
+    .home-parent div.img img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .brand{
+        margin: auto;
+    }
+    .brand>h2{
+        font-weight:600 ;
+        font-size: 22px;
+        padding: 55px 0 0 0;
+        width: fit-content;
+    }
+    .types{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .type{
+        width: calc(100%/1);
+        padding: 25px 0;
+        
+    }
+    .type a{
+        width: 150px;
+        height: 150px;
+    }
+    .type a:hover{
+        background-color:#750505;
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+    }
+    .type h2{
+        color: #a2b3c8;   
+        text-align: center;
+        padding-top: 60px;
+        font-weight: 600;
+        font-size: 25px;
+        text-transform: uppercase;
+        
+    }
+    .products{
+        margin: auto;
+    }
+    .products .caption>h2{
+        font-weight:600 ;
+        font-size: 30px;
+        margin-bottom: 35px;
+        width: fit-content;
+    }
+    .products h2.hp-logo , .products h2.dell-logo ,.products h2.apple-logo{
+        width: 100px;
+        height: 100px;
+        padding-top: 30px;
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+    }
+    .cards .hp , .cards .dell , .cards .apple{
+        width: calc(100%/1);
+    }
+    .login-container{
+        padding: 0;
+    }
+
+    form .caption-1>h2{
+        font-size: 23px;  
+    }
+
+    input[type="submit"]{
+        font-size: 20px;
+        padding:10px;
+        width: 75%; 
+        margin: auto;
+    }
+    .Get-in-Touch .caption-1.caption-1>h2{
+        font-size: 25px;  
+    }
+
+    .Get-in-Touch>p{
+        font-size: 20px;
+    }
+
+    .Get-in-Touch .btn i{
+        font-size: 14px;
+     }
+
+    .btn-1{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    footer{
+        padding: 0;
+    }
+
+    footer>div>p{
+        font-weight:500;
+        font-size:15px ;
+    }
+    footer>div>p>span{
+        font-size: 17px;
+    }
+}
